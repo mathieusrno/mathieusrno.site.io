@@ -14,11 +14,12 @@ function affiche(id) {
     
 function affiche_2(id) {
     const boutons = document.getElementById(id);
-    const display_bouton = window.getComputedStyle(boutons).display;
+    const display = boutons.style.display;
 
-    if (display_bouton == "none") {
+    // Astuce : si aucun style inline n'est encore défini
+    if (display === "" || display === "none") {
         boutons.style.display = "block";
     } else {
-        boutons.style.display = "none"
+        boutons.style.display = "none";
     }
 }
