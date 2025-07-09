@@ -13,7 +13,7 @@ function affiche(id) {
 }
     
 function affiche_2(id) {
-    let boutons = document.getElementById(id);
+    const boutons = document.getElementById(id);
 
     if (boutons.style.display == "none") {
         boutons.style.display = "block";
