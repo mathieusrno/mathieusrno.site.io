@@ -17,8 +17,8 @@ function affiche_2(id) {
     const display_bouton = window.getComputedStyle(boutons).display;
 
     if (display_bouton == "none") {
-        display_bouton.display = "block";
+        boutons.style.display = "block";
     } else {
-        display_bouton.display = "none"
+        boutons.style.display = "none"
     }
 }
