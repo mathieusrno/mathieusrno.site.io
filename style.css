@@ -1,4 +1,4 @@
-#boutons {
+
     display : none;
 }
 
@@ -7,11 +7,45 @@ html, body {
     padding: 0;
 }
 
-h1 {
-    margin : 0 auto 30px auto; 
-    text-align: left;
-    padding : 60px 20px ;
-    color : #023535;
-    background-color :#008F8C;
+.bandeau {
+    height: 120px;
+    width: 100%;
+    background-color: #B9D6F2 ;
+    position: relative;
+    box-sizing: border-box;
+}
+.bandeau h1 {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    margin : 0 ; 
+    font-size: 24px;
+    color : #006DAA;
     font-family : 'Josefin Sans', sans-serif;
+}
+.menu {
+    position: absolute;
+    top : 20px;
+    right: 20px;
+    background-color: #006DAA;
+    border : none;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;              /* bouton circulaire */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;                        /* espace entre les barres */
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+
+}
+
+.menu .bar{
+    width: 22px;
+    height: 3px;
+    background-color: #B9D6F2;      /* couleur des barres */
+    border-radius: 2px;
 }
